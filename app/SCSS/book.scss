@@ -1,0 +1,70 @@
+.book-lib {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.book-lib-title{
+       font-size: 18px;
+    font-weight: bold;
+     
+}
+
+.book-row {
+    display: block;
+    height: 50px;
+    span {
+        margin: 0 20px;
+        position: absolute;
+        position: absolute;
+        height: 50px;
+    }
+    .book-name {
+        left: 0;
+    }
+    .book-edition {
+        left: 20%;
+    }
+    .book-author {
+        left: 40%;
+    }
+    .book-edit{
+        left: 60%;
+    }
+    .book-delete {
+        left: 80%;
+    }
+}
+
+.add-book {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+
+/*add book popup ccss*/
+
+.add-book-popup,.edit-popup {
+    position: absolute;
+    top: 0;
+    background: gray;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >div {
+        >div {
+            color: white;
+            margin: 20px;
+        }
+    }
+}
+
+.add-book-popup-closed, .close-edit-popup{
+    display: none;
+}

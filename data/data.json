@@ -1,0 +1,42 @@
+{
+   "books": [
+	
+      {
+         "id":"01",
+         "name": "Java",
+         "edition": "third",
+         "author": "Herbert Schildt"
+      },
+	
+      {
+         "id":"02",
+         "name": "C++",
+         "edition": "second",
+         "author": "E.Balagurusamy"
+      },
+
+      
+      {
+         "id":"03",
+         "name": "Javascript",
+         "edition": "second",
+         "author": "Brendan Eich"
+      },
+
+      
+      {
+         "id":"04",
+         "name": "React",
+         "edition": "second",
+         "author": "Jordan Walke"
+      },
+
+      
+      {
+         "id":"05",
+         "name": "Redux",
+         "edition": "first",
+         "author": "Dan Abramov"
+      }
+   ]
+}
