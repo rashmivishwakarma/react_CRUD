@@ -24,6 +24,7 @@ class AddBook extends React.Component{
                 edition: this.state.edition,
                 author: this.state.author,
         }
+console.log('<<>>');
         this.setState({
             AddBookInTableFlag: !this.state.AddBookInTableFlag,
             bookData: this.state.bookData.push(newBookObj)
