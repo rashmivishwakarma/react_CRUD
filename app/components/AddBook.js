@@ -56,6 +56,6 @@ class AddBook extends React.Component{
     }
 }
 AddBook.propTypes = {
-  newBookTemp: PropTypes.object
+  newBookTemp: PropTypes.array
 };
 export default AddBook;
