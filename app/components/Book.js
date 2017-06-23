@@ -16,7 +16,9 @@ class Book extends React.Component {
     }
     this.addBook = this.addBook.bind(this);
   }
-  
+  componentWillMount() {
+      console.log('Component WILL MOUNT!')
+   }
   componentDidMount(){
     const url = '../data/data.json';
     axios
@@ -29,7 +31,25 @@ class Book extends React.Component {
       })
       .catch((err)=> {})
   }
+  
 
+
+   componentWillReceiveProps(newProps) {    
+      console.log('Component WILL RECIEVE PROPS!')
+   }
+
+
+   componentWillUpdate(nextProps, nextState) {
+      console.log('Component WILL UPDATE!');
+   }
+
+   componentDidUpdate(prevProps, prevState) {
+      console.log('Component DID UPDATE!')
+   }
+
+   componentWillUnmount() {
+      console.log('Component WILL UNMOUNT!')
+   }
   addBook(){
     this.setState({
       showAddBookFlag: !this.state.showAddBookFlag
@@ -54,6 +74,7 @@ class Book extends React.Component {
       isEditing: !this.state.isEditing,
       editedBook: book
     })
+    console.log('this.state.bookData after in main book.js',this.state.bookData);
   }
 
   render() {

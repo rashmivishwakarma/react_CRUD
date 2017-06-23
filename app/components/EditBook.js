@@ -35,7 +35,6 @@ class EditBook extends React.Component{
             bookData: this.state.bookData,
             showEditPopup: !this.state.showEditPopup
         });
-        
         console.log('this.state.bookData after',this.state.bookData);
     }
 
