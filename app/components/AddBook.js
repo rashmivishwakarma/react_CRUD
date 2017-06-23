@@ -24,9 +24,10 @@ class AddBook extends React.Component{
                 edition: this.state.edition,
                 author: this.state.author,
         }
+        const addedBookData = [...this.state.bookData, newBookObj]
         this.setState({
             AddBookInTableFlag: !this.state.AddBookInTableFlag,
-            bookData: this.state.bookData.push(newBookObj)
+            bookData: addedBookData
         })
     }
 
